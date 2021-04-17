@@ -38,6 +38,11 @@ export default styled.div<MediaQueryStyleProps>`
    }
 `
 
+/**
+ * Creates a CSS mediaquery string.
+ * @param properties Object specifying which properties to query
+ * @returns The mediaquery
+ */
 export function makeMediaQuery(properties: Partial<MediaQueryPropertyMap>) {
    return `@media (${Object.entries(properties).map(
       ([property, value]) => `${MEDIA_QUERY_PROPERTY_NAMES[property as MediaQueryProperty]}: ${MEDIA_QUERY_WIDTHS[value as MediaQueryWidth]}`

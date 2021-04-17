@@ -47,7 +47,7 @@ export default class Document extends NextDocument {
                   href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
                   rel="stylesheet"
                />
-               <link rel="icon" href="/icon.png" />
+               <link rel="icon" href="/icon2.jpg" />
             </Head>
             <body>
                <Main />

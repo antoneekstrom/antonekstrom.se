@@ -3,6 +3,9 @@ import { makeMediaQuery } from './MediaQuery.style'
 
 export type HeaderStyleProps = any
 
+/**
+ * Header which should be visible on every subpage.
+ */
 export default styled.header<HeaderStyleProps>`
    display: flex;
    align-items: stretch;
