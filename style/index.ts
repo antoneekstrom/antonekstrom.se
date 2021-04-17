@@ -46,7 +46,7 @@ export function props<T, P extends keyof T>(
  * @param fn Function which returns CSS
  * @returns Result of the function
  */
-export function propsIf<T, P extends keyof T>(
+export function ifProps<T, P extends keyof T>(
    property: P,
    fn: (property: T[P]) => string | ReturnType<typeof css>
 ): (props: T) => string | ReturnType<typeof css> {

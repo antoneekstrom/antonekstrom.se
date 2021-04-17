@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { color, props, propsIf } from '.'
+import { color, props, ifProps } from '.'
 
 /**
  *
@@ -54,7 +54,7 @@ export type FlexStyleProps = Align & Justify & Direction & Expand & Gap
 export const Flex = styled.div<FlexStyleProps>`
    color: ${color('neutral', 'text')};
 
-   ${propsIf(
+   ${ifProps(
       'expand',
       () => css`
          height: 100%;

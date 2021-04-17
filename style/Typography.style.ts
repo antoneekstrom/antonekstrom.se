@@ -5,7 +5,7 @@ import styled from 'styled-components'
  */
 export const LogoHeading = styled.h1`
    font-family: 'Lexend Zetta';
-   font-size: 12px;
+   font-size: 14px;
    font-weight: 400;
    margin: 0;
 
@@ -21,4 +21,16 @@ export const Heading1 = styled.h1`
    font-size: 64px;
    font-weight: 700;
    margin: 0;
+`
+
+/**
+ * 
+ */
+export const Paragraph1 = styled.p`
+   font-family: 'Montserrat';
+   font-size: 14px;
+   font-weight: 400;
+   margin: 0;
+   width: 70ch;
+   line-height: 200%;
 `

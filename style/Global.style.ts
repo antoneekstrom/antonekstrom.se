@@ -8,6 +8,8 @@ export default createGlobalStyle`
    html, body, #__next, .view {
       margin: 0;
       padding: 0;
+
+      font-size: 12px;
       font-family: "Montserrat";
 
       width: 100vw;

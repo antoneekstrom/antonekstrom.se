@@ -2,17 +2,18 @@ import React, { PropsWithChildren } from 'react'
 import HeaderStyle from '../style/Header.style'
 import { Flex } from '../style/Layout.style'
 import { LogoHeading } from '../style/Typography.style'
+import { useRouter } from 'next/dist/client/router'
 
 export default function Header() {
+   const router = useRouter()
    return (
       <HeaderStyle>
-         <Logotype />
+         <Logotype onClick={() => router.push('/')} />
          <Navigation>
-            <MenuItem>Home</MenuItem>
-            <MenuItem>Contact</MenuItem>
-            <MenuItem>Timeline</MenuItem>
+            <MenuItem onClick={() => router.push('/contact')}>Contact</MenuItem>
+            <MenuItem onClick={() => router.push('/timeline')}>Timeline</MenuItem>
             <MenuItem>CV</MenuItem>
-            <MenuItem>About</MenuItem>
+            <MenuItem onClick={() => router.push('/about')}>About</MenuItem>
          </Navigation>
       </HeaderStyle>
    )
@@ -30,17 +31,17 @@ export default function Header() {
       )
    }
 
-   function Logotype() {
+   function Logotype({ onClick }: Pick<React.HTMLProps<HTMLSpanElement>, 'onClick'>) {
       return (
-         <span className="logotype">
+         <span className="logotype" onClick={onClick}>
             <LogoHeading>Anton Ekström</LogoHeading>
          </span>
       )
    }
 
-   function MenuItem({ children }: PropsWithChildren<unknown>) {
+   function MenuItem({ children, onClick }: Pick<React.HTMLProps<HTMLLIElement>, 'onClick'> & PropsWithChildren<unknown>) {
       return (
-         <li>
+         <li onClick={onClick}>
             <LogoHeading>{children}</LogoHeading>
          </li>
       )
