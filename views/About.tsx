@@ -1,6 +1,6 @@
 import React from 'react'
-import { Flex } from '../style/Layout.style'
-import { Heading1 } from '../style/Typography.style'
+import { Flex } from '../style/Layout'
+import { Heading1 } from '../style/Typography'
 
 /**
  * Homepage.

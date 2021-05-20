@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react'
-import HeaderStyle from '../style/Header.style'
-import { Flex } from '../style/Layout.style'
-import { LogoHeading } from '../style/Typography.style'
+import HeaderStyle from '../components/Header.style'
+import { Flex } from '../style/Layout'
+import { LogoHeading } from '../style/Typography'
 import { useRouter } from 'next/dist/client/router'
 
 export default function Header() {

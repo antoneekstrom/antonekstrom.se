@@ -12,8 +12,9 @@ export const MEDIA_QUERY_PROPERTY_NAMES: {[key in MediaQueryProperty]: string} =
 
 export const MEDIA_QUERY_WIDTHS = {
    mobile: '500px',
-   small: '850px',
-   medium: '1000px',
+   small: '600px',
+   medium: '800px',
+   large: '1200px',
    desktop: '1400px',
 }
 
@@ -40,6 +41,13 @@ export default styled.div<MediaQueryStyleProps>`
 
 /**
  * Creates a CSS mediaquery string.
+ * ```
+ * css`
+ *    ${makeMediaQuery({maxWidth: 'mobile'})} {
+ *       flex-direction: column;
+ *    }
+ * `
+ * ```
  * @param properties Object specifying which properties to query
  * @returns The mediaquery
  */

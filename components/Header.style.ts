@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { makeMediaQuery } from './MediaQuery.style'
+import { color } from '../style'
+import { makeMediaQuery } from '../style/MediaQuery'
 
 export type HeaderStyleProps = any
 
@@ -11,16 +12,18 @@ export default styled.header<HeaderStyleProps>`
    align-items: stretch;
    flex-direction: row-reverse;
 
+   margin-bottom: 2rem;
+
    ol > li, .logotype {
-      padding: 2em 2em;
+      padding: 3em;
       cursor: pointer;
 
       &:hover {
-         background-color: rgba(255,255,255,0.05);
+         background-color: ${color('neutral', 'hover')};
       }
    }
 
-   ${makeMediaQuery({maxWidth: 'small'})} {
+   ${makeMediaQuery({maxWidth: 'medium'})} {
       nav.menu {
          display: none;
       }

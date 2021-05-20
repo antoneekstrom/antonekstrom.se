@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { color, props, ifProps } from '.'
+import { makeMediaQuery, MEDIA_QUERY_WIDTHS } from './MediaQuery'
 
 /**
  *
@@ -49,6 +50,11 @@ export type Side = {
 export type FlexStyleProps = Align & Justify & Direction & Expand & Gap
 
 /**
+ * 
+ */
+export type SectionStyleProps = { margin?: boolean }
+
+/**
  * Flexbox container.
  */
 export const Flex = styled.div<FlexStyleProps>`
@@ -67,4 +73,45 @@ export const Flex = styled.div<FlexStyleProps>`
    justify-content: ${props('justify') ?? 'center'};
    align-items: ${props('align') ?? 'center'};
    gap: ${props('gap') ?? '0'};
+`
+
+/**
+ * Base-container for content.
+ */
+export const Page = styled.div`
+`
+
+/**
+ * Column layout for paragraphs and similar content.
+ */
+export const Section = styled.div<SectionStyleProps>`
+   background-color: ${color('neutral', 'background')};
+
+   padding: 0 30%;
+
+   ${makeMediaQuery({maxWidth: 'large'})} {
+      padding: 0 10rem;
+   }
+
+   ${makeMediaQuery({maxWidth: 'medium'})} {
+      padding: 0 7rem;
+   }
+
+   ${makeMediaQuery({maxWidth: 'small'})} {
+      padding: 0 4rem;
+   }
+
+   ${makeMediaQuery({maxWidth: 'mobile'})} {
+      padding: 0 3rem;
+   }
+
+   ${ifProps('margin', () => css`
+      margin-bottom: 5rem;
+   `)}
+`
+
+/**
+ * Top-level container for the application.
+ */
+export const AppFrame = styled.div`
 `

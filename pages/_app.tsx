@@ -2,10 +2,10 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { RecoilRoot } from 'recoil'
 import { ThemeProvider } from 'styled-components'
-import Header from '../components/Header'
-import View from '../components/View'
-import GlobalStyle from '../style/Global.style'
-import { ALTERNATE_THEME } from '../style/Themes'
+import Header from '../content/Header'
+import GlobalStyle from '../style/Global'
+import { AppFrame } from '../style/Layout'
+import { themes } from '../style/Themes'
 
 /**
  * 
@@ -14,15 +14,16 @@ import { ALTERNATE_THEME } from '../style/Themes'
 export default function App({ Component, pageProps }: AppProps) {
    return (
       <RecoilRoot>
-         <ThemeProvider theme={ALTERNATE_THEME}>
+         <ThemeProvider theme={themes.default}>
             <Head>
                <title>antonekstrom.se</title>
             </Head>
             <GlobalStyle />
-            <View 
-               main={() => <Component {...pageProps} />}
-               header={Header}
-            />
+            
+            <AppFrame>
+               <Header />
+               <Component {...pageProps} />
+            </AppFrame>
          </ThemeProvider>
       </RecoilRoot>
    )

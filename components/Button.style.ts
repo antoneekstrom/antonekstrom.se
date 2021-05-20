@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { color, ifProps, props } from '.'
+import { color, ifProps, props } from '../style'
 
 export type ButtonStyleProps = {
    outlined?: boolean

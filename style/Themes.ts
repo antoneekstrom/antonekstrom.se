@@ -12,25 +12,27 @@ export const colors = {
 /**
  * Primary color palette.
  */
-export const PRIMARY_PALETTE: ThemePalette = {
+const PRIMARY_PALETTE: ThemePalette = {
    text: colors.SECONDARY,
    background: colors.PRIMARY,
-   border: colors.SECONDARY
+   border: colors.SECONDARY,
+   hover: 'rgba(0,0,0,0.05)'
 } 
 
 /**
  * Alternate color palette.
  */
-export const ALTERNATE_PALETTE: ThemePalette = {
+const ALTERNATE_PALETTE: ThemePalette = {
    text: colors.PRIMARY,
    background: colors.SECONDARY,
-   border: colors.PRIMARY
+   border: colors.PRIMARY,
+   hover: 'rgba(255,255,255,0.05)'
 }
 
 /**
  * Default theming configuration.
  */
-export const DEFAULT_THEME: DefaultTheme = {
+const DEFAULT_THEME: DefaultTheme = {
    props: {
       disabled: false
    },
@@ -43,7 +45,7 @@ export const DEFAULT_THEME: DefaultTheme = {
 /**
  * Alternate theming configuration.
  */
- export const ALTERNATE_THEME: DefaultTheme = {
+ const ALTERNATE_THEME: DefaultTheme = {
    props: {
       disabled: false
    },
@@ -51,4 +53,12 @@ export const DEFAULT_THEME: DefaultTheme = {
       neutral: ALTERNATE_PALETTE,
       disabled: ALTERNATE_PALETTE // TODO add 'disabled' palette
    }
+}
+
+/**
+ * 
+ */
+export const themes = {
+   default: DEFAULT_THEME,
+   alternate: ALTERNATE_THEME
 }

@@ -4,6 +4,7 @@ export type ThemePalette = {
    text: string
    background: string
    border: string
+   hover: string
 }
 
 export type BaseTheme = {
