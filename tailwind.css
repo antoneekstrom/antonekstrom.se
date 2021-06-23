@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white selection:bg-lavendel-700 selection:text-lavendel;
+}
+
+html {
+  scrollbar-color: theme("colors.lavendel.600") theme("colors.lavendel.800");
+}
+
+html::-webkit-scrollbar {
+  background-color: theme("colors.lavendel.800");
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: theme("colors.lavendel.600");
+}
+
+@layer utilities {
+  .animation-delay-0 {
+    animation-delay: 0ms;
+  }
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animation-delay-700 {
+    animation-delay: 700ms;
+  }
+  .animation-delay-900 {
+    animation-delay: 900ms;
+  }
+  .animation-delay-1s {
+    animation-delay: 1s;
+  }
+}
+
+@layer components {
+  .page-inset {
+    @apply px-12 md:px-24 lg:px-28 xl:px-32;
+  }
+  .title {
+    @apply text-5xl sm:text-7xl lg:text-8.5xl leading-none font-semibold font-sans text-black;
+  }
+  .subtitle {
+    @apply title text-3xl sm:text-4xl lg:text-6xl;
+  }
+  .title-eyebrow {
+    @apply text-sm sm:text-base font-regular font-brand text-black uppercase;
+  }
+  .paragraph {
+    @apply text-base font-regular font-sans text-black tracking-wide leading-loose my-8 max-w-screen-md;
+  }
+  .text-tag {
+    @apply relative before:absolute before:-left-6 before:top-0 before:bottom-0 before:my-auto before:h-1/2 before:w-2 before:bg-lavendel before:block;
+  }
+  .btn {
+    @apply whitespace-nowrap rounded-md px-6 py-3 text-sm font-semibold font-sans  tracking-widest uppercase focus:ring-2 focus:ring-offset-4 focus:outline-none hover:transform-gpu transition-all;
+  }
+  .btn-primary {
+    @apply bg-lavendel text-white focus:ring-lavendel hover:bg-lavendel-600 hover-peek shadow-lavendel;
+  }
+  .btn-secondary {
+    @apply bg-lavendel-800 text-lavendel focus:ring-lavendel hover:bg-lavendel-700;
+  }
+  .btn-row {
+    @apply flex flex-row gap-4;
+  }
+  .hover-peek {
+    @apply transform-gpu hover:-translate-y-1 transition-all;
+  }
+  .link {
+    @apply hover:underline hover:text-lavendel-400 hover:border-lavendel-400;
+  }
+}

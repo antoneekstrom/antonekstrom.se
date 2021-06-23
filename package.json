@@ -1,29 +1,26 @@
 {
   "name": "antonekstrom.se",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/zimbosaurus/antonekstrom.se.git",
-  "author": "Anton Ekström <anton.e.ekstrom@gmail.com>",
+  "version": "0.0.0",
+  "author": "Anton Ekström",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start -p 3000"
-  },
-  "dependencies": {
-    "framer-motion": "^4.0.3",
-    "next": "latest",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "recoil": "^0.1.3",
-    "rxjs": "^6.6.6",
-    "styled-components": "^5.0.0"
+    "dev": "vite --host",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@types/react": "16.8.23",
-    "@types/react-dom": "16.8.4",
-    "@types/styled-components": "5.0.1",
-    "babel-plugin-styled-components": "^1.10.0",
-    "typescript": "4.0"
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tsconfig/svelte": "^2.0.1",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.1",
+    "svelte": "^3.38.2",
+    "svelte-check": "^2.2.0",
+    "svelte-preprocess": "^4.7.3",
+    "tailwind-scrollbar": "^1.3.1",
+    "tailwindcss": "^2.2.2",
+    "tslib": "^2.3.0",
+    "vite": "^2.3.8"
   }
 }

@@ -1,6 +1,13 @@
 {
-  "tabWidth": 3,
-  "useTabs": false,
-  "semi": false,
-  "singleQuote": true
+   "tabWidth": 2,
+   "semi": true,
+   "trailingComma": "none",
+   "jsxSingleQuote": false,
+   "singleQuote": false,
+   "useTabs": false,
+   "svelteBracketNewLine": false,
+   "svelteIndentScriptAndStyle": true,
+   "svelteAllowShorthand": false,
+   "arrowParens": "always",
+   "bracketSpacing": true
 }
