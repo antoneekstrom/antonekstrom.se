@@ -56,7 +56,7 @@ html::-webkit-scrollbar-thumb {
     @apply text-sm sm:text-base font-regular font-brand text-black uppercase;
   }
   .paragraph {
-    @apply text-base font-regular font-sans text-black tracking-wide leading-loose my-8 max-w-screen-md;
+    @apply text-base font-regular font-sans text-black tracking-wide leading-loose my-6 mt-3 max-w-screen-md;
   }
   .text-tag {
     @apply relative before:absolute before:-left-6 before:top-0 before:bottom-0 before:my-auto before:h-1/2 before:w-2 before:bg-lavendel before:block;

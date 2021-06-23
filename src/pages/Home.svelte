@@ -3,15 +3,13 @@
   import Section from "../components/Section.svelte";
   import Page from "../components/Page.svelte";
   import Hero from "../components/Hero.svelte";
-  import ThumbnailLarge from "../components/ThumbnailLarge.svelte";
-  import ThumbnailSmall from "../components/ThumbnailSmall.svelte";
+  import ThumbnailSmall from "../components/Thumbnail.svelte";
   import Speedbox from "../components/Speedbox.svelte";
 </script>
 
 <Page>
   <Header />
-  <div
-    class="page-inset mt-20 flex flex-col gap-52 lg:gap-80 w-full overflow-x-hidden">
+  <div class="page-inset mt-10 flex flex-col gap-32 w-full overflow-x-hidden">
     <Hero />
     <Section title="Projekt." eyebrow="jag skapar upplevelser">
       <div>
@@ -21,84 +19,44 @@
           du ta en titt på de projekt som jag är mest stolt över!
         </p>
       </div>
-      <div class="mt-12">
-        <ThumbnailLarge
-          alt="iMatJS screenshot"
-          src="/images/screenshots/imatjs_screenshot.png">
-          <div class="flex flex-col justify-between h-full">
-            <div>
-              <a href="#plupp">
-                <h1 class="subtitle link inline-block">iMatJS</h1>
-              </a>
-              <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                iusto sunt commodi aut molestias iste placeat deleniti
-                recusandae fugit obcaecati.
-              </p>
-            </div>
-            <div class="btn-row">
-              <button class="btn btn-primary">besök sidan</button>
-              <button class="btn btn-secondary">läs mer</button>
-            </div>
+      <div class="mt-8">
+        <ul
+          class="mt-20 gap-16 grid justify-items-stretch grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-cols-fr">
+          <div class="col-span-1 xl:col-span-3">
+            <ThumbnailSmall
+              alt="iMatJS screenshot"
+              src="/images/screenshots/imatjs_screenshot.png"
+              title="iMatJS"
+              row
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+              iusto sunt commodi aut molestias iste placeat deleniti recusandae
+              fugit obcaecati.
+            </ThumbnailSmall>
           </div>
-        </ThumbnailLarge>
-        <ul class="mt-24 gap-24 grid justify-items-stretch grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <ThumbnailSmall
             alt="chalmers.it screenshot"
-            src="/images/screenshots/chalmers-it_screenshot.png">
-            <div class="flex flex-col justify-between h-full">
-              <div>
-                <a href="#plupp">
-                  <h1 class="subtitle text-3xl link inline-block">chalmers.it</h1>
-                </a>
-                <p class="paragraph">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                  iusto sunt commodi aut molestias iste placeat deleniti recusandae
-                  fugit obcaecati.
-                </p>
-              </div>
-              <div>
-                <button class="btn btn-secondary">läs mer</button>
-              </div>
-            </div>
+            src="/images/screenshots/chalmers-it_screenshot.png"
+            title="chalmers.it">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iusto
+            sunt commodi aut molestias iste placeat deleniti recusandae fugit
+            obcaecati.
           </ThumbnailSmall>
           <ThumbnailSmall
             alt="EDI screenshot"
-            src="/images/screenshots/edi_screenshot.png">
-            <div>
-              <div>
-                <a href="#plupp">
-                  <h1 class="subtitle text-3xl link inline-block">EDI</h1>
-                </a>
-                <p class="paragraph">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                  iusto sunt commodi aut molestias iste placeat deleniti recusandae
-                  fugit obcaecati.
-                </p>
-              </div>
-              <div>
-                <button class="btn btn-secondary">läs mer</button>
-              </div>
-            </div>
+            src="/images/screenshots/edi_screenshot.png"
+            title="EDI"
+            >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iusto
+            sunt commodi aut molestias iste placeat deleniti recusandae fugit
+            obcaecati.
           </ThumbnailSmall>
           <ThumbnailSmall
             alt="EDI screenshot"
-            src="/images/screenshots/edi_screenshot.png">
-            <div>
-              <div>
-                <a href="#plupp">
-                  <h1 class="subtitle text-3xl link inline-block">EDI</h1>
-                </a>
-                <p class="paragraph">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                  iusto sunt commodi aut molestias iste placeat deleniti recusandae
-                  fugit obcaecati.
-                </p>
-              </div>
-              <div>
-                <button class="btn btn-secondary">läs mer</button>
-              </div>
-            </div>
+            src="/images/screenshots/edi_screenshot.png"
+            title="EDI"
+            >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iusto
+            sunt commodi aut molestias iste placeat deleniti recusandae fugit
+            obcaecati.
           </ThumbnailSmall>
         </ul>
       </div>

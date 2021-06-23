@@ -20,7 +20,7 @@
         mycket kul! Allra mest har jag sysslat med att programmera och designa
         webbplatser.
       </p>
-      <div class="btn-row mt-2">
+      <div class="btn-row flex-col sm:flex-row mt-2">
         <button class="btn btn-primary">kontakta mig</button>
         <button class="btn btn-secondary">se mitt cv</button>
       </div>

@@ -5,9 +5,6 @@
    "jsxSingleQuote": false,
    "singleQuote": false,
    "useTabs": false,
-   "svelteBracketNewLine": false,
-   "svelteIndentScriptAndStyle": true,
-   "svelteAllowShorthand": false,
    "arrowParens": "always",
    "bracketSpacing": true
 }
