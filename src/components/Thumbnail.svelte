@@ -18,7 +18,7 @@
         <a href="#plupp">
           <h1 class="subtitle text-3xl link inline-block">{title}</h1>
         </a>
-        <p class="paragraph text-sm md:text-base">
+        <p class="paragraph">
           <slot />
         </p>
       </div>

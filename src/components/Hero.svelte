@@ -7,10 +7,10 @@
   <div class="flex flex-col xl:gap-12 xl:flex-row">
     <div>
       <h1 class="title">Anton Ekström.</h1>
-      <h2 class="title-eyebrow text-base md:text-xl hidden md:block">
+      <h2 class="title-eyebrow md:text-xl hidden md:block">
         IT-student | software engineer | designer
       </h2>
-      <h2 class="title-eyebrow text-base md:text-xl md:hidden">
+      <h2 class="title-eyebrow text-sm mt-2 md:hidden">
         IT-student<br />software engineer<br />designer
       </h2>
       <p class="paragraph my-8">

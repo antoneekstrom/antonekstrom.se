@@ -9,7 +9,8 @@
 
 <Page>
   <Header />
-  <div class="page-inset mt-10 flex flex-col gap-32 w-full overflow-x-hidden">
+  <div
+    class="page-inset mt-10 flex flex-col gap-16 md:gap-32 w-full overflow-x-hidden">
     <Hero />
     <Section title="Projekt." eyebrow="jag skapar upplevelser">
       <div>
@@ -19,16 +20,15 @@
           du ta en titt på de projekt som jag är mest stolt över!
         </p>
       </div>
-      <div class="mt-8">
+      <div>
         <ul
-          class="mt-20 gap-16 grid justify-items-stretch grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-cols-fr">
+          class="mt-16 gap-16 grid justify-items-stretch grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-cols-fr">
           <div class="col-span-1 xl:col-span-3">
             <ThumbnailSmall
               alt="iMatJS screenshot"
               src="/images/screenshots/imatjs_screenshot.png"
               title="iMatJS"
-              row
-            >
+              row>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
               iusto sunt commodi aut molestias iste placeat deleniti recusandae
               fugit obcaecati.
@@ -63,7 +63,9 @@
     </Section>
     <Section title="Expert-skrivare." eyebrow="jag skiver snabbt">
       <p class="paragraph">Det råkar vara så att jag skriver jättesnabbt.*</p>
-      <Speedbox />
+      <div class="">
+        <Speedbox />
+      </div>
     </Section>
     <Section title="Förmågor." eyebrow="jag besitter flera förmågor">
       <p class="paragraph">
@@ -79,7 +81,6 @@
         vitae nisi, scelerisque egestas molestie. Morbi semper auctor at luctus.
       </p>
     </Section>
-
     <Section title="Emoji-expert." eyebrow="jag professionell emoji-kritiker">
       <p class="paragraph">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit aliquet
