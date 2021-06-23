@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { color } from '.'
-import { makeMediaQuery } from './MediaQuery'
 
 /**
  * Type used in the logo and navigationbar.

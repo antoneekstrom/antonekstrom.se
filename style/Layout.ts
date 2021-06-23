@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { color, props, ifProps } from '.'
-import { makeMediaQuery, MEDIA_QUERY_WIDTHS } from './MediaQuery'
+import { makeMediaQuery } from './MediaQuery'
 
 /**
  *
@@ -87,7 +87,7 @@ export const Page = styled.div`
 export const Section = styled.div<SectionStyleProps>`
    background-color: ${color('neutral', 'background')};
 
-   padding: 0 30%;
+   padding: 0 clamp(300px, 25%, 100%);
 
    ${makeMediaQuery({maxWidth: 'large'})} {
       padding: 0 10rem;

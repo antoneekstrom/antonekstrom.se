@@ -26,7 +26,9 @@ function HeroTitle(props: SectionStyleProps) {
          </Title>
          <LogoHeading>IT-Student | Programmer | Living legend</LogoHeading>
          <Paragraph1>
-            Jag heter Anton Ekström och studerar Informationsteknik på Chalmers Tekniska Högskola i Göteborg. En annan sak som är viktigt att veta är att alla de katter som min familj har haft är de bästa katterna.
+            Jag heter Anton Ekström och studerar Informationsteknik på Chalmers Tekniska Högskola i Göteborg.
+            En annan sak som är viktigt att veta är att alla de katter som min familj har haft är de bästa katterna.
+            Det råkar även vara så att det här är min helt egna personliga lilla hemsida. Dock, är den tyvärr inte färdig riktigt än.
          </Paragraph1>
       </HeroTitleStyle>
    )
