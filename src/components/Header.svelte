@@ -27,12 +27,6 @@
             class="px-6 py-1 text-sm font-regular font-brand text-black uppercase hover:bg-lavendel-900 hover:text-lavendel rounded-sm transition-colors duration-100"
             >Kontakt</a>
         </li>
-        <li>
-          <a
-            href="#plupp"
-            class="px-6 py-1 text-sm font-regular font-brand text-black uppercase hover:bg-lavendel-900 hover:text-lavendel rounded-sm transition-colors duration-100"
-            >Om</a>
-        </li>
       </ul>
     </nav>
   </div>
