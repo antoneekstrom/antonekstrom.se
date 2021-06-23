@@ -1,5 +1,5 @@
 <script>
-  import Watermark from "./Watermark.svelte";
+  import Watermark from "../../components/Watermark.svelte";
 </script>
 
 <section class="relative">

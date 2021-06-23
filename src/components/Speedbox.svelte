@@ -1,20 +1,25 @@
-<div class="">
+
+<script>
+  /* animate-shake animation-delay-100 */
+</script>
+
+<div>
   <div class="relative h-[200px] md:h-[300px]">
     <svg
       class="min-w-full h-[400px] md:h-[600px] absolute left-1/2 top-1/2 transform-gpu -translate-x-1/2 -translate-y-1/2 -z-1"
       viewBox="0 0 2512 609"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
-      <rect class="animate-shake animation-delay-100" x="291" y="55" width="497" height="14" fill="#E6E2F8" />
-      <rect class="animate-shake animation-delay-300" x="-265" y="112" width="497" height="14" fill="#E6E2F8" />
-      <rect class="animate-shake animation-delay-500" x="2155" y="105" width="357" height="14" fill="#E6E2F8" />
-      <rect class="animate-shake animation-delay-700" x="501" y="112" width="772" height="14" fill="#E6E2F8" />
-      <rect class="animate-shake animation-delay-500" x="738" y="566" width="929" height="14" fill="#E6E2F8" />
-      <rect class="animate-shake animation-delay-100" x="-43" y="595" width="411" height="14" fill="#E6E2F8" />
-      <rect class="animate-shake animation-delay-300" x="1583" y="511" width="929" height="14" fill="#E6E2F8" />
-      <rect class="animate-shake animation-delay-700" x="1724" width="367" height="14" fill="#E6E2F8" />
-      <rect class="animate-shake animation-delay-300" x="368" y="497" width="725" height="14" fill="#E6E2F8" />
-      <rect class="animate-shake animation-delay-500" x="1474" y="48" width="434" height="14" fill="#E6E2F8" />
+      <rect x="291" y="55" width="497" height="14" fill="#E6E2F8" />
+      <rect x="-265" y="112" width="497" height="14" fill="#E6E2F8" />
+      <rect x="2155" y="105" width="357" height="14" fill="#E6E2F8" />
+      <rect x="501" y="112" width="772" height="14" fill="#E6E2F8" />
+      <rect x="738" y="566" width="929" height="14" fill="#E6E2F8" />
+      <rect x="-43" y="595" width="411" height="14" fill="#E6E2F8" />
+      <rect x="1583" y="511" width="929" height="14" fill="#E6E2F8" />
+      <rect x="1724" width="367" height="14" fill="#E6E2F8" />
+      <rect x="368" y="497" width="725" height="14" fill="#E6E2F8" />
+      <rect x="1474" y="48" width="434" height="14" fill="#E6E2F8" />
     </svg>
     <div
       class="bg-lavendel flex justify-center sm:block sm:page-inset py-6 absolute top-1/2 -translate-y-1/2 w-screen left-1/2 -translate-x-1/2">

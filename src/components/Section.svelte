@@ -6,8 +6,8 @@
 
 <section>
   <h2 class="title-eyebrow">{eyebrow}</h2>
-  <h1 class="title text-tag mt-3">{title}</h1>
+  <h1 class="title text-tag mt-3 mb-6">{title}</h1>
   <div>
-    <slot />
+    <slot></slot>
   </div>
 </section>
