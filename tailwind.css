@@ -7,6 +7,7 @@ body {
 }
 
 html {
+  @apply smooth-scroll scroll-padding-200;
   scrollbar-color: theme("colors.lavendel.600") theme("colors.lavendel.800");
 }
 
@@ -44,13 +45,19 @@ html::-webkit-scrollbar-thumb {
 
 @layer components {
   .page-inset {
-    @apply px-8 sm:px-12 md:px-24 lg:px-28 xl:px-32;
+    @apply flex flex-row justify-center;
+  }
+  .page-inset > * {
+    @apply px-8 sm:px-12 md:px-24 lg:px-28 xl:px-32 max-w-screen-2xl w-full;
   }
   .title {
     @apply text-5xl sm:text-7xl lg:text-8.5xl leading-none font-semibold font-sans text-black;
   }
   .subtitle {
-    @apply title text-3xl sm:text-4xl lg:text-6xl;
+    @apply title text-4xl md:text-5xl lg:text-6xl;
+  }
+  .subsubtitle {
+    @apply subtitle text-3xl sm:text-4xl lg:text-4xl;
   }
   .title-eyebrow {
     @apply text-sm sm:text-base font-regular font-brand text-black uppercase;
@@ -62,21 +69,43 @@ html::-webkit-scrollbar-thumb {
     @apply relative before:absolute before:-left-4 sm:before:-left-6 before:top-0 before:bottom-0 before:my-auto before:h-1/2 before:w-1 sm:before:w-2 before:bg-lavendel before:block;
   }
   .btn {
-    @apply whitespace-nowrap rounded-md px-6 py-3 text-sm font-semibold font-sans  tracking-widest uppercase focus:ring-2 focus:ring-offset-4 focus:outline-none hover:transform-gpu transition-all;
+    @apply whitespace-nowrap rounded-md px-6 py-3 text-sm font-semibold font-sans text-center tracking-widest uppercase focus:ring-2 focus:ring-offset-4 focus:outline-none;
   }
   .btn-primary {
-    @apply bg-lavendel text-white focus:ring-lavendel hover:bg-lavendel-600 hover-peek shadow-lavendel;
+    @apply bg-lavendel  text-white focus:ring-lavendel hover:bg-lavendel-600 shadow-lavendel peek hover:active-peek;
   }
   .btn-secondary {
-    @apply bg-lavendel-800 text-lavendel focus:ring-lavendel hover:bg-lavendel-700;
+    @apply bg-lavendel-800 text-lavendel focus:ring-lavendel hover:bg-lavendel-700 transition-colors;
   }
   .btn-row {
     @apply flex flex-row gap-4;
   }
-  .hover-peek {
-    @apply transform-gpu hover:-translate-y-1 transition-all;
+  .peek {
+    @apply transform-gpu transition-all;
+  }
+  .active-peek {
+    @apply -translate-y-1;
   }
   .link {
-    @apply hover:underline hover:text-lavendel-400 hover:border-lavendel-400;
+    @apply cursor-pointer;
+  }
+  .active-link {
+    @apply underline text-lavendel-400 border-lavendel-400;
+  }
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  .scroll-padding-50 {
+    scroll-padding-block: 50px;
+    overflow-y: scroll;
+  }
+  .scroll-padding-200 {
+    scroll-padding-block: 200px;
+    overflow-y: scroll;
+  }
+  .scroll-padding-600 {
+    scroll-padding-block: 600px;
+    overflow-y: scroll;
   }
 }

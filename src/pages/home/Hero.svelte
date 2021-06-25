@@ -6,7 +6,7 @@
   <Watermark>Anton Ekström</Watermark>
   <div class="flex flex-col xl:gap-12 xl:flex-row">
     <div>
-      <h1 class="title">Anton Ekström.</h1>
+      <h1 class="title" id="the-title">Anton Ekström.</h1>
       <h2 class="title-eyebrow md:text-xl hidden md:block">
         IT-student | software engineer | designer
       </h2>
@@ -21,8 +21,8 @@
         webbplatser.
       </p>
       <div class="btn-row flex-col sm:flex-row mt-2">
-        <button class="btn btn-primary">kontakta mig</button>
-        <button class="btn btn-secondary">se mitt cv</button>
+        <a class="btn btn-primary" href="#kontakt">kontakta mig</a>
+        <button class="btn btn-secondary" on:click={() => {window.alert("finns inte än :(")}}>se mitt cv</button>
       </div>
     </div>
     <div
@@ -30,7 +30,7 @@
       <img
         src="/images/jag/cool@25.jpg"
         alt="Anton Ekström"
-        class="border-2 border-black w-128 mt-12 xl:mt-0 xl:relative -bottom-24 hover-peek link" />
+        class="border-2 border-black w-128 mt-12 xl:mt-0 xl:relative -bottom-24 peek hover:active-peek link hover:active-link cursor-auto" />
     </div>
   </div>
 </section>

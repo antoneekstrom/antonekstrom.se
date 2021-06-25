@@ -20,13 +20,13 @@
   </p>
   <ul class="flex flex-row items-center gap-6 my-4">
     <li>
-      <img class="w-24" src="/images/logos/cthit.png" alt="IT logo" />
+      <a href="https://chalmers.it/" target="_blank"><img class="w-24" src="/images/logos/cthit.png" alt="IT logo" /></a>
     </li>
     <li>
-      <img class="w-24" src="/images/logos/digit.png" alt="digIT logo" />
+      <a href="https://chalmers.it/committees/digit" target="_blank"><img class="w-24" src="/images/logos/digit.png" alt="digIT logo" /></a>
     </li>
     <li>
-      <img class="w-24" src="/images/logos/armit.png" alt="ArmIT logo" />
+      <a href="https://chalmers.it/committees/armit" target="_blank"><img class="w-24" src="/images/logos/armit.png" alt="ArmIT logo" /></a>
     </li>
   </ul>
   <p class="paragraph">

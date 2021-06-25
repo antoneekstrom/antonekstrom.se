@@ -29,7 +29,7 @@
         <h2 class="subtitle mt-12">Frontend</h2>
         <p class="paragraph">
           Allra mest erfarenhet har jag med frontend ramverket React och
-          språket Typescript. Dessa har jag använt flytigt under flera år
+          språket Typescript. Dessa har jag använt flitigt under flera år
           och jag skulle nog säga att jag kan använda dessa verktyg rätt
           väl.
         </p>

@@ -23,6 +23,7 @@
           title="iMatJS"
           tags={["WIP"]}
           link="https://imat.antonekstrom.se/"
+          github="https://github.com/zimbosaurus/imatjs"
           row
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
@@ -46,6 +47,7 @@
         src="/images/screenshots/bingoblin_screenshot.png"
         title="Bingoblin"
         link="https://bingoblin.antonekstrom.se/"
+        github="https://github.com/zimbosaurus/bingoblin"
         >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iusto
         sunt commodi aut molestias iste placeat deleniti recusandae fugit
         obcaecati.
@@ -56,6 +58,7 @@
         title="EDI"
         tags={["WIP", "plupp"]}
         link="https://edi.antonekstrom.se/"
+        github="https://github.com/zimbosaurus/edi"
         >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iusto
         sunt commodi aut molestias iste placeat deleniti recusandae fugit
         obcaecati.

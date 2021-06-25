@@ -22,15 +22,17 @@
       <rect x="1474" y="48" width="434" height="14" fill="#E6E2F8" />
     </svg>
     <div
-      class="bg-lavendel flex justify-center sm:block sm:page-inset py-6 absolute top-1/2 -translate-y-1/2 w-screen left-1/2 -translate-x-1/2">
-      <h1
-        class="
-        text-4xl md:text-7xl lg:text-8.5xl font-brand tracking-widest text-white w-max relative
-          after:absolute after:-right-6 after:top-0 after:bottom-0 after:my-auto after:h-full after:w-2 after:bg-white after:block after:animate-flash
-        ">
-        120 WPM
-      </h1>
-      <p class="absolute -bottom-2 left-4 sm:left-auto sm:right-12 translate-y-full text-xs sm:text-sm text-black-700">*Talet ovan kanske möjligtvis inte alltid reflekterar min faktiska skrivhastighet</p>
+      class="bg-lavendel sm:page-inset py-6 absolute top-1/2 -translate-y-1/2 w-screen left-1/2 -translate-x-1/2">
+      <div class="flex justify-center sm:block">
+        <h1
+          class="
+          text-4xl md:text-7xl lg:text-8.5xl font-brand tracking-widest text-white whitespace-nowrap w-max relative
+            after:absolute after:-right-6 after:top-0 after:bottom-0 after:my-auto after:h-full after:w-2 after:bg-white after:block after:animate-flash
+          ">
+          120 WPM
+        </h1>
+        <p class="absolute -bottom-2 left-4 sm:left-auto sm:right-12 translate-y-full text-xs sm:text-sm text-black-700">*Talet ovan kanske möjligtvis inte alltid reflekterar min faktiska skrivhastighet</p>
+      </div>
     </div>
   </div>
 </div>

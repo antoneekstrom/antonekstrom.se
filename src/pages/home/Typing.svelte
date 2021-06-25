@@ -10,7 +10,7 @@
     fartlinjerna som vistas häromkring. Dessa visar att det går fort så att
     säga.
   </p>
-  <div class="">
+  <div>
     <Speedbox />
   </div>
 </Section>
