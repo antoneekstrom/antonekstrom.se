@@ -1,17 +1,17 @@
 <script lang="ts">
-  import Section from "../../components/Section.svelte";
+  import Section from "../../components/TitledSection.svelte";
 </script>
 
 <Section title="Förmågor." eyebrow="jag besitter flera förmågor">
   <div class="flex flex-row justify-between">
     <div>
-      <p class="paragraph">
+      <p class="paragraph paragraph-padding">
         Jag har programmerat mycket under mina dagar och har utforskat många
         olika fält inom teknik och mjukvara. Inte bara har jag designat
         webbplatser, utan jag har även lite erfarenhet med datorgrafik,
         spel, datastrukturer, servrar och databaser!
       </p>
-      <p class="paragraph">
+      <p class="paragraph paragraph-padding">
         Om du har en tillräckligt stor skärm, kan du till höger se en lista
         med benämningar på teknologier som jag har varit i kontakt med en
         eller annan gång. Det vill säga, det finns en samling ord som
@@ -27,11 +27,11 @@
           />
         </div>
         <h2 class="subtitle mt-12">Frontend</h2>
-        <p class="paragraph">
+        <p class="paragraph paragraph-padding">
           Allra mest erfarenhet har jag med frontend ramverket React och
           språket Typescript. Dessa har jag använt flitigt under flera år
           och jag skulle nog säga att jag kan använda dessa verktyg rätt
-          väl.
+          väl. Det här stycket behöver jag verkligen utveckla på! Eller hur?
         </p>
       </div>
     </div>

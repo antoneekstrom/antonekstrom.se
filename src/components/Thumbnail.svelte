@@ -6,13 +6,10 @@
   export let tags: string[] = [];
   export let link: string = undefined;
   export let github: string = undefined;
-  // export let path: string = undefined;
 </script>
 
-<!-- TODO gör med "named slots" -->
-
-<article>
-  <div class="flex flex-col gap-6 {row && 'xl:flex-row xl:gap-16'}">
+<article class="h-full">
+  <div class="h-full flex flex-col gap-6 {row && 'xl:flex-row xl:gap-16'}">
     <a
       href={link}
       target="_blank"
@@ -25,7 +22,7 @@
           'xl:max-w-screen-md'} peek group-hover:active-peek group-focus-within:active-peek link group-focus-within:active-link group-hover:active-link"
       />
     </a>
-    <div class="flex flex-col">
+    <div class="flex flex-col justify-between flex-grow">
       <div>
         <div class="flex flex-row gap-6 items-center">
           <a href={link} target="_blank" class="">
@@ -44,12 +41,12 @@
             {/each}
           </ul>
         </div>
-        <p class="paragraph">
+        <div>
           <slot />
-        </p>
+        </div>
       </div>
-      <div class="btn-row">
-        <button class="btn btn-secondary">läs mer</button>
+      <div class="btn-group-row">
+        <button class="btn btn-secondary" on:click={() => window.alert("finns inte :(")}>läs mer</button>
         {#if github}
           <a class="btn btn-secondary" href={github} target="_blank">
             <svg

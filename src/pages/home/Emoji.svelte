@@ -1,11 +1,16 @@
 <script lang="ts">
-  import Section from "../../components/Section.svelte";
+  import Section from "../../components/TitledSection.svelte";
 </script>
 
-<Section title="Emoji-expert." eyebrow="jag professionell emoji-kritiker">
-  <p class="paragraph">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit aliquet
-    sollicitudin eget auctor. Sit quam faucibus magna ut euismod. Dolor,
-    vitae nisi, scelerisque egestas molestie. Morbi semper auctor at luctus.
+<Section title="Emoji-expert." eyebrow="jag är professionell emoji-kritiker">
+  <p class="paragraph paragraph-padding">
+    Mina top 5 emojisar!!
   </p>
+  <ol class="flex flex-col md:flex-row place-items-center gap-12 list-counter">
+    <li><span class="list-counter-item flex flex-row md:flex-col xl:flex-row place-items-center gap-4 text-5xl md:text-7xl">😎</span></li>
+    <li><span class="list-counter-item flex flex-row md:flex-col xl:flex-row place-items-center gap-4 text-5xl md:text-7xl">🥳</span></li>
+    <li><span class="list-counter-item flex flex-row md:flex-col xl:flex-row place-items-center gap-4 text-5xl md:text-7xl">🌜</span></li>
+    <li><span class="list-counter-item flex flex-row md:flex-col xl:flex-row place-items-center gap-4 text-5xl md:text-7xl">😭</span></li>
+    <li><span class="list-counter-item flex flex-row md:flex-col xl:flex-row place-items-center gap-4 text-5xl md:text-7xl">🌛</span></li>
+  </ol>
 </Section>

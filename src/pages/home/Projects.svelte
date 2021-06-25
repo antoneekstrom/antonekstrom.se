@@ -1,68 +1,41 @@
-
 <script lang="ts">
-  import Section from "../../components/Section.svelte";
-  import ThumbnailSmall from "../../components/Thumbnail.svelte";
+  import Section from "../../components/TitledSection.svelte";
+  import Thumbnail from "../../components/Thumbnail.svelte";
+  import { projects } from "../../data/projects.json";
 </script>
 
 <Section title="Projekt." eyebrow="jag skapar upplevelser">
   <div>
-    <p class="paragraph">
-      Det råkar vara så att jag har ett flertal projekt under mitt bälte.
-      Dock så har jag tyvärr inte slutfört särskilt många av dem. Nedan kan
-      du ta en titt på de projekt som jag är mest stolt över!
+    <p class="paragraph paragraph-padding">
+      Det råkar vara så att jag har ett flertal projekt under mitt bälte. Dock
+      så har jag tyvärr inte slutfört särskilt många av dem. Nedan kan du ta en
+      titt på de projekt som jag är mest stolt över!
     </p>
   </div>
   <div>
     <ul
-      class="mt-16 gap-16 grid justify-items-stretch grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-cols-fr"
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-cols-fr justify-items-stretch mt-16 gap-16"
     >
-      <div class="col-span-1 xl:col-span-3">
-        <ThumbnailSmall
-          alt="iMatJS screenshot"
-          src="/images/screenshots/imatjs_screenshot.png"
-          title="iMatJS"
-          tags={["WIP"]}
-          link="https://imat.antonekstrom.se/"
-          github="https://github.com/zimbosaurus/imatjs"
-          row
-        >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-          iusto sunt commodi aut molestias iste placeat deleniti recusandae
-          fugit obcaecati.
-        </ThumbnailSmall>
-      </div>
-      <ThumbnailSmall
-        alt="chalmers.it screenshot"
-        src="/images/screenshots/chalmers-it_screenshot.png"
-        title="chalmers.it"
-        tags={["WIP"]}
-        link="https://chalmers.it/"
-      >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iusto
-        sunt commodi aut molestias iste placeat deleniti recusandae fugit
-        obcaecati.
-      </ThumbnailSmall>
-      <ThumbnailSmall
-        alt="Bingoblin screenshot"
-        src="/images/screenshots/bingoblin_screenshot.png"
-        title="Bingoblin"
-        link="https://bingoblin.antonekstrom.se/"
-        github="https://github.com/zimbosaurus/bingoblin"
-        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iusto
-        sunt commodi aut molestias iste placeat deleniti recusandae fugit
-        obcaecati.
-      </ThumbnailSmall>
-      <ThumbnailSmall
-        alt="EDI screenshot"
-        src="/images/screenshots/edi_screenshot.png"
-        title="EDI"
-        tags={["WIP", "plupp"]}
-        link="https://edi.antonekstrom.se/"
-        github="https://github.com/zimbosaurus/edi"
-        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iusto
-        sunt commodi aut molestias iste placeat deleniti recusandae fugit
-        obcaecati.
-      </ThumbnailSmall>
+      {#each projects as project, i}
+        <div class={i == 0 && "col-span-1 xl:col-span-3"}>
+          <Thumbnail
+            title={project.title}
+            tags={project.tags}
+            src={project.thumbnail.src}
+            alt={project.thumbnail.alt}
+            link={project.link}
+            github={project.github}
+            row={i == 0}
+          >
+            <div class="paragraph-padding">
+              {#each project.description as line}
+                <p class="paragraph paragraph-small">{line}</p>
+              {/each}
+            </div>
+          </Thumbnail>
+        </div>
+      {/each}
+      <div class="col-span-1 xl:col-span-3" />
     </ul>
   </div>
 </Section>

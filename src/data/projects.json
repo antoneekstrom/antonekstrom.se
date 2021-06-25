@@ -1,0 +1,57 @@
+{
+  "projects": [
+    {
+      "title": "iMatJS",
+      "description": [
+        "En matbutik på webben som är anpassad för den äldre befolkningen.",
+        "Det var ursprungligen ett projekt på universitet som gjordes med JavaFX. Jag tänkte att jag kunde göra det bättre om jag fick använda ett verktyg som inte lanserades för 12 år sedan. Även är det en bra erfarenhet som består av många olika delar att sätta ihop. Jag har lärt mig mycket!"
+      ],
+      "thumbnail": {
+        "src": "/images/screenshots/imatjs_screenshot.png",
+        "alt": "En bild på iMatJS"
+      },
+      "tags": ["WIP"],
+      "link": "https://imat.antonekstrom.se/",
+      "github": "https://github.com/zimbosaurus/imatjs"
+    },
+    {
+      "title": "chalmers.it",
+      "description": [
+        "Jag utforskar möjligheten att ge vår älskade chalmers.it en ny fräsch design! Definitivt work in progress, men jag hoppas att få det gjort någon gång.",
+        "Med det här projektet lär jag mig om GraphQL eftersom det verkar häftigt, och även mer om databaser."
+      ],
+      "thumbnail": {
+        "src": "/images/screenshots/chalmers-it_screenshot.png",
+        "alt": "En bild på chalmers.it"
+      },
+      "tags": ["WIP"],
+      "link": "https://chalmers.it/"
+    },
+    {
+      "title": "Bingoblin",
+      "description": [
+        "Bingoblin är nog mitt mest färdiga projekt hittils. Det är nästan fullt fungerande! Projektet innefattar interaktion mellan klienter i realtid, vilket är lite knepigt. Jag lärde mig mycket om websockets och det var ett kul projekt, och jag kanske återkommer får att göra klart det helt någon gång."
+      ],
+      "thumbnail": {
+        "src": "/images/screenshots/bingoblin_screenshot.png",
+        "alt": "En bild på Bingoblin"
+      },
+      "link": "https://bingoblin.antonekstrom.se/",
+      "github": "https://github.com/zimbosaurus/bingoblin"
+    },
+    {
+      "title": "EDI Viewer",
+      "description": [
+        "Det så kallade EDIFACT formatet används bland annat på hamnar, där min pappa råkar arbeta. Därför tyckte han jag skulle göra ett program för detta för han tycker inte det finns några bra.",
+        "Mycket knepigt filformat att läsa, dock är det en riktig utmaning och ett program som verkligen kan vara användbart. Det ska jag göra klart.. snart!"
+      ],
+      "thumbnail": {
+        "src": "/images/screenshots/edi_screenshot.png",
+        "alt": "En bild på EDI Viewer"
+      },
+      "tags": ["WIP", "plupp"],
+      "link": "https://edi.antonekstrom.se/",
+      "github": "https://github.com/zimbosaurus/edi"
+    }
+  ]
+}

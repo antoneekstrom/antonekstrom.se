@@ -62,8 +62,17 @@ html::-webkit-scrollbar-thumb {
   .title-eyebrow {
     @apply text-sm sm:text-base font-regular font-brand text-black uppercase;
   }
+  .title-eyebrow-large {
+    @apply title-eyebrow md:text-xl;
+  }
   .paragraph {
-    @apply text-sm sm:text-base font-regular font-sans text-black tracking-wide leading-loose sm:leading-loose my-6 mt-3 max-w-screen-md;
+    @apply text-sm sm:text-base font-regular font-sans text-black tracking-wide leading-loose sm:leading-loose mt-3 max-w-screen-md;
+  }
+  .paragraph-padding {
+    @apply my-8;
+  }
+  .paragraph-small {
+    @apply text-sm sm:text-sm leading-loose sm:leading-loose;
   }
   .text-tag {
     @apply relative before:absolute before:-left-4 sm:before:-left-6 before:top-0 before:bottom-0 before:my-auto before:h-1/2 before:w-1 sm:before:w-2 before:bg-lavendel before:block;
@@ -77,11 +86,14 @@ html::-webkit-scrollbar-thumb {
   .btn-secondary {
     @apply bg-lavendel-800 text-lavendel focus:ring-lavendel hover:bg-lavendel-700 transition-colors;
   }
-  .btn-row {
+  .btn-group-row {
     @apply flex flex-row gap-4;
   }
+  .btn-group-col {
+    @apply flex flex-col gap-4;
+  }
   .peek {
-    @apply transform-gpu transition-all;
+    @apply transform transition-transform;
   }
   .active-peek {
     @apply -translate-y-1;
@@ -94,6 +106,16 @@ html::-webkit-scrollbar-thumb {
   }
   .smooth-scroll {
     scroll-behavior: smooth;
+  }
+
+  .list-counter {
+    counter-reset: list-counter;
+  }
+  .list-counter-item {
+    counter-increment: list-counter;
+  }
+  .list-counter-item::before {
+    content: counter(list-counter) ". ";
   }
 
   .scroll-padding-50 {
